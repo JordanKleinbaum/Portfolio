@@ -20,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #86003f;
+  background: hsla(332, 100%, 50%, 0.808);
   clip-path: circle(0px at 80% 20%);
   transition: 0.9s ease-in-out;
 }
