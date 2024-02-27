@@ -447,9 +447,9 @@ img.pull-left {
   justify-content: center;
 }
 
-.parents {
-  padding: 0 20px;
-}
+/* .parents {
+  padding: 0 5px;
+} */
 
 .bgrid {
   padding: 0 20px;

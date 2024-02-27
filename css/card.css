@@ -1,16 +1,17 @@
 /* CARD */
 .container {
   position: relative;
-  align-content: center;
 }
 
 .container .card {
   position: relative;
-  max-width: 11em;
+  max-width: 10em;
   height: 20rem;
   background: #232323;
   border-radius: 15px;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Python */
