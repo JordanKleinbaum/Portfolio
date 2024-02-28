@@ -1353,7 +1353,7 @@ header .logo a {
 /* dropdown nav */
 .main-navigation {
   background: #000000;
-  padding: 24px 20px 42px;
+  padding: 10px 20px 24px;
   margin: 0;
   width: 100%;
   height: auto;
@@ -1800,6 +1800,12 @@ header .logo a {
   top: 0.9rem;
   margin-left: -2.4rem;
 }
+.timelineResume {
+  position: absolute;
+  left: 27%;
+  top: 3rem;
+}
+
 #resume .timeline-ico i {
   position: relative;
   left: 0.05rem;
@@ -2685,6 +2691,9 @@ footer .copyright span:last-child::after {
  * -------------------------------------------------------------------
  */
 @media only screen and (max-width: 768px) {
+  .timelineResume {
+    left: 37%;
+  }
   footer {
     text-align: center;
   }
