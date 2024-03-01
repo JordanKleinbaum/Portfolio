@@ -6,7 +6,12 @@ function sendMail() {
     message: document.getElementById("contactMessage").value,
   };
 
-  emailks
+  emailjs
     .send("service_v6vzuzh", "template_v7q3057", params)
-    .then(alert("Email has been sent!"));
+    .then(function () {
+      document.getElementById("message-success").style.display = "block";
+    })
+    .catch(function (error) {
+      console.error("Email could not be sent: ", error);
+    });
 }
