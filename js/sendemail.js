@@ -1,11 +1,12 @@
-function sendEmail() {
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "kleimwein@gmail.com",
-    Password: "A23A4A4F14856A9E7A33B43E3EC74601D849",
-    To: "jordankleinbaum1@gmail.com",
-    From: document.getElementById("email").value,
-    Subject: document.getElementById("contactSubject").value,
-    Body: document.getElementById("contactMessage").value,
-  }).then((message) => alert("Message Send Successfully"));
+function sendMail() {
+  let params = {
+    name: document.getElementById("contactName").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("contactSubject").value,
+    message: document.getElementById("contactMessage").value,
+  };
+
+  emailks
+    .send("service_v6vzuzh", "template_v7q3057", params)
+    .then(alert("Email has been sent!"));
 }

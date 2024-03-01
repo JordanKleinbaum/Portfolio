@@ -776,7 +776,7 @@
 								required=""></textarea>
 						</div>
 						<div class="form-field">
-							<button class="submitform" type="submit">Submit</button>
+							<button class="submitform" type="submit" onclick="sendMail()">Submit</button>
 							<div id="submit-loader">
 								<div class="text-loader">Sending...</div>
 								<div class="s-loader">
@@ -887,9 +887,16 @@
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init({
+				publicKey: "q7PL90YPU9WuTDzN4",
+			});
+		})();
+	</script>
 	<script src="./js/sendemail.js"></script>
-
 </body>
 
 </html>
