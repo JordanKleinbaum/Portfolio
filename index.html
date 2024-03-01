@@ -757,7 +757,7 @@
 			<div class="col-twelve">
 
 				<!-- form -->
-				<form name="contactForm" id="contactForm" method="post" action="send_email.php">
+				<form onsubmit="sendEmail(); reset(); return false">
 
 					<fieldset>
 
@@ -766,7 +766,7 @@
 								required="">
 						</div>
 						<div class="form-field">
-							<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+							<input name="contactEmail" type="email" id="email" placeholder="Email" value="" required="">
 						</div>
 						<div class="form-field">
 							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
@@ -776,7 +776,7 @@
 								required=""></textarea>
 						</div>
 						<div class="form-field">
-							<button class="submitform">Submit</button>
+							<button class="submitform" type="submit">Submit</button>
 							<div id="submit-loader">
 								<div class="text-loader">Sending...</div>
 								<div class="s-loader">
@@ -887,6 +887,8 @@
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="./js/sendemail.js"></script>
 
 </body>
 
