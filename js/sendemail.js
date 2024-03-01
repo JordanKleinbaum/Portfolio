@@ -7,7 +7,7 @@ function sendMail() {
   };
 
   emailjs
-    .send("service_v6vzuzh", "template_v7q3057", params)
+    .send("service_ujrp6ec", "template_yfoh12r", params)
     .then(function () {
       document.getElementById("message-success").style.display = "block";
     })
